@@ -3,6 +3,7 @@
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
   transition: background-color 0.3s, color 0.3s;
+  padding-top: 60px; /* room for fixed header */
 }
 
 .light {

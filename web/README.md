@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Personal Page (Adryell)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository hosts my personal/portfolio website built with React, TypeScript and Vite. It features:
 
-Currently, two official plugins are available:
+- Multiple routes: **Home** and **Projects** (client‑side routing with HashRouter).
+- Dark/light theme with system preference detection and persistence.
+- Internationalization (i18next) in English, Portuguese and Spanish.
+- SEO helpers using `react-helmet-async` for dynamic titles/descriptions.
+- Progressive Web App support (offline, installable) via `vite-plugin-pwa`.
+- Accessibility improvements: proper `aria` labels, focus outlines, and keyboard navigation.
+- Performance tweaks: lazy-loaded images, srcset for WebP, code-splitting with `React.lazy`, prefetch links and optimized meta tags.
+- Responsive layout, header with navigation and language selector.
+- Dynamic project listing driven by `projectsData.json`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Running the project
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Build for production:
+
+```bash
+npm run build
+```
+
+After building, the app is optimized with code-splitting and service worker caches resources for offline use.
+
+## Notes
+
+- The `src/services` folder contains helper contexts (`themeContext`, `authContext`).
+- Styles are written using CSS modules under `src/pages` and `src/components`.
+- The application is deployed on Render (see `render.yaml`) but can easily be ported to other static hosts.
+
+Feel free to explore and customize the content; the translation files under `src/locales` drive the copy.

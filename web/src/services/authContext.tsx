@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
+import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 interface AuthContextType {
   token: string | null;
@@ -14,9 +14,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [token, setToken] = useState<string | null>(localStorage.getItem('token'));
 
-  useEffect(() => {
-    console.log("Uwu")
-  }, []);
+  // future side‑effects (e.g. token refresh) may go here
 
   return (
     <AuthContext.Provider value={{ token, setToken }}>

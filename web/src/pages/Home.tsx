@@ -1,54 +1,83 @@
-import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+import Seo from '../components/Seo';
+import React from 'react';
 import styles from './Home.module.css';
 import SocialArea from '../components/SocialArea';
+import { useTheme } from '../services/themeContext';
 
 const Home = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
+  const { t } = useTranslation();
+  const { darkMode } = useTheme();
 
   return (
-    <div className={`${styles.bodyMain} ${darkMode ? styles.dark : styles.light}`}>
-      <button onClick={toggleDarkMode} className={styles.toggleButton}>
-        {darkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
-
-      <div className={styles.leftColumn}>
+    <>
+      <Seo
+        title={`Adryell – ${t('home')}`}
+        description="Personal page of Adryell, backend developer"
+        url="https://www.adryell.com/"
+        image="/assets/pp/pic.jpg"
+        twitterCard="summary_large_image"
+        twitterCreator="@adryells"
+        ldJson={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Paulo Adryell",
+          url: "https://www.adryell.com",
+          sameAs: [
+            "https://github.com/adryells",
+            "https://www.linkedin.com/in/pauloadryell/",
+          ],
+          jobTitle: "Backend Developer",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Caxias",
+            addressRegion: "MA",
+            addressCountry: "BR",
+          },
+        }}
+      />
+      <div className={`${styles.bodyMain} ${darkMode ? styles.dark : styles.light}`}>
+        <div className={styles.leftColumn}>
         <img
-          src="assets/pp/pp1.jpg"
+          src="/assets/pp/pic.jpg"
+          srcSet="/assets/pp/pic.webp 1x, /assets/pp/pic.jpg 2x"
           alt="Paulo Adryell"
           className={styles.profileImage}
+          loading="lazy"
+          width="150"
+          height="150"
         />
         <h1 className={styles.name}>Paulo Adryell</h1>
-        <h2 className={styles.profession}>Backend Developer</h2>
-        <a href="mailto:adryellpaulo@gmail.com" className={`${styles.contactMe} ${darkMode ? styles.dark : styles.light}`}>
-          Contact me
+        <h2 className={styles.profession}>{t('profession') || 'Backend Developer'}</h2>
+        <a href="mailto:adryellpaulo@gmail.com" className={styles.contactMe} aria-label="Send email to Adryell">
+          {t('contact_me')}
         </a>
         <SocialArea className={styles.socialArea} />
       </div>
 
       <div className={styles.rightColumn}>
-        <p className={styles.aboutMe}>
-          I'm a backend developer with over 3 years of professional experience
-          delivering solutions for platforms such as course management, boat rentals,
-          social networks, financial systems, and automation tools. My journey began in 2018
-          during a technical IT course, and since 2021, I've been seriously focused on expanding
-          my knowledge and skills. This foundation includes databases, algorithms, OOP, functional
-          programming, and more. My expertise spans Python, Java, REST, GraphQL, Docker, Linux, Redis,
-          among other technologies and tools I've worked with throughout the years.
-        </p>
+        <h2>{t('about_heading')}</h2>
+        <p className={styles.aboutMe}>{t('text_1')}</p>
+        <p className={styles.aboutMe}>{t('text_2')}</p>
         <a
           href="https://github.com/adryells?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.projectsLink}
         >
-          View My Projects on GitHub
+          {t('view_github')}
+        </a>
+        <a
+          href="/#/resume"
+          className={styles.projectsLink}
+          style={{ marginLeft: '10px' }}
+        >
+          {t('resume')}
         </a>
       </div>
     </div>
+    </>
   );
 };
 

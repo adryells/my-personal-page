@@ -1,0 +1,230 @@
+{
+  "en": {
+    "summary": "Backend Developer with about 5 years of experience, specialized in Python and service optimization. I have reduced latencies, implemented caching and queues, and migrated tasks to asynchronous execution to make systems faster and more stable in production.",
+    "experience": [
+      {
+        "company": "Lightfarm Studios",
+        "role": "Backend Developer",
+        "start": "August 2024",
+        "end": "Present",
+        "location": "Remote",
+        "bullets": [
+          "Refactored critical services for background processing using Redis Queue, reducing load on synchronous service and increasing availability.",
+          "Developed a service to manage financial recalculations in multiple layers, enabling asynchronous execution, reprocessing and configurable retries.",
+          "Identified and mitigated performance bottlenecks using Redis, PostgreSQL, profiling and metrics.",
+          "Contributed to the evolution of internal chat and notification systems, working with WebSockets, MongoDB persistence and asynchronous triggers via Redis."
+        ]
+      },
+      {
+        "company": "Puzzl Software House",
+        "role": "Backend Developer",
+        "start": "September 2021",
+        "end": "July 2024",
+        "location": "Remote",
+        "bullets": [
+          "Refactored a legacy project introducing automated tests and architectural improvements.",
+          "Automated jobs with cron and implemented integrations with DigitalOcean/Amazon S3.",
+          "Implemented caching layer with Redis reducing latency on critical endpoints.",
+          "Developed PostgreSQL reports integrated with Looker Studio for business analytics.",
+          "Designed and implemented referral system and career system for courses.",
+          "Implemented unified exception system, standardizing errors between backend and frontend.",
+          "Participated in technical guilds presenting architecture improvements, processes and best practices.",
+          "Contributed to the maintenance and expansion of the notification system via OneSignal, implementing new sending flows according to business rules."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Personal Page",
+        "year": "2024",
+        "description": "Personal site with admin panel, own API and full deploy (React, TypeScript, Spring Boot, PostgreSQL)."
+      },
+      {
+        "title": "TFA - Time to Finish an Anime",
+        "year": "2023",
+        "description": "Containerized application combining FastAPI + Redis + PostgreSQL to calculate time estimates, with asynchronous architecture and caching."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Faculdade Descomplica",
+        "degree": "Bacharelado em Engenharia de Software",
+        "start": "January 2026",
+        "end": "Present",
+        "location": "Remote"
+      },
+      {
+        "institution": "IFMA - Campus Caxias",
+        "degree": "Bacharelado em Ciência da Computação",
+        "start": "July 2021",
+        "end": "May 2022",
+        "location": "Caxias - MA"
+      },
+      {
+        "institution": "IFMA - Campus Caxias",
+        "degree": "Technical course in IT integrated to high school",
+        "start": "January 2018",
+        "end": "May 2021",
+        "location": "Caxias - MA"
+      }
+    ],
+    "skills": {
+      "languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL", "Shell"],
+      "frameworks": ["FastAPI", "Django", "Flask", "Spring Boot"],
+      "databases": ["PostgreSQL", "SQLite", "MySQL", "Redis", "MongoDB"],
+      "infra": ["Docker", "Docker Compose", "Linux", "CI/CD", "GitHub Actions", "Grafana", "AWS (S3)"]
+    }
+  },
+  "pt": {
+    "summary": "Backend Developer com cerca de 5 anos de experiência, especializado em Python e otimização de serviços. Já reduzi latências, implementei cache e filas e migrei tarefas para execução assíncrona para tornar sistemas mais rápidos e estáveis em produção.",
+    "experience": [
+      {
+        "company": "Lightfarm Studios",
+        "role": "Backend Developer",
+        "start": "Agosto 2024",
+        "end": "Presente",
+        "location": "Remoto",
+        "bullets": [
+          "Refatorei serviços críticos para processamento em background com Redis Queue, reduzindo carga do serviço síncrono e aumentando disponibilidade.",
+          "Desenvolvi um serviço para gerenciamento de recálculos financeiros em múltiplas camadas, permitindo execução assíncrona, reprocessamentos e retries configuráveis.",
+          "Identifiquei e mitiguei gargalos de performance usando Redis, PostgreSQL, profiling e métricas.",
+          "Contribuí para a evolução dos sistemas internos de chat e notificações, trabalhando com WebSockets, persistência no MongoDB e disparos assíncronos via Redis."
+        ]
+      },
+      {
+        "company": "Puzzl Software House",
+        "role": "Backend Developer",
+        "start": "Setembro 2021",
+        "end": "Julho 2024",
+        "location": "Remoto",
+        "bullets": [
+          "Refatorei projeto legado introduzindo testes automatizados e melhorias estruturais de arquitetura.",
+          "Automatizei jobs com cron e implementei integrações com DigitalOcean/Amazon S3.",
+          "Implementei camada de cache com Redis reduzindo latências em endpoints críticos.",
+          "Desenvolvi relatórios PostgreSQL integrados ao Looker Studio para análises de negócio.",
+          "Concebi e implementei sistema de convite (referral) e sistema de carreira para cursos.",
+          "Implementei sistema de exceções unificado, padronizando erros entre backend e frontend.",
+          "Participei de guildas técnicas apresentando melhorias de arquitetura, processos e boas práticas.",
+          "Contribuí na manutenção e expansão do sistema de notificações via OneSignal, implementando novos fluxos de envio conforme regras de negócio."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Personal Page",
+        "year": "2024",
+        "description": "Site pessoal com painel admin, API própria e deploy completo (React, TypeScript, Spring Boot, PostgreSQL)."
+      },
+      {
+        "title": "TFA - Time to Finish an Anime",
+        "year": "2023",
+        "description": "Aplicação containerizada que combina FastAPI + Redis + PostgreSQL para calcular estimativas de tempo, com arquitetura assíncrona e caching."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Faculdade Descomplica",
+        "degree": "Bacharelado em Engenharia de Software",
+        "start": "Janeiro 2026",
+        "end": "Em andamento",
+        "location": "Remoto"
+      },
+      {
+        "institution": "IFMA - Campus Caxias",
+        "degree": "Bacharelado em Ciência da Computação",
+        "start": "Julho 2021",
+        "end": "Maio 2022",
+        "location": "Caxias - MA"
+      },
+      {
+        "institution": "IFMA - Campus Caxias",
+        "degree": "Curso técnico em informática integrado ao ensino médio",
+        "start": "Janeiro 2018",
+        "end": "Maio 2021",
+        "location": "Caxias - MA"
+      }
+    ],
+    "skills": {
+      "languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL", "Shell"],
+      "frameworks": ["FastAPI", "Django", "Flask", "Spring Boot"],
+      "databases": ["PostgreSQL", "SQLite", "MySQL", "Redis", "MongoDB"],
+      "infra": ["Docker", "Docker Compose", "Linux", "CI/CD", "GitHub Actions", "Grafana", "AWS (S3)"]
+    }
+  },
+  "es": {
+    "summary": "Backend Developer con cerca de 5 años de experiencia, especializado en Python y optimización de servicios. He reducido latencias, implementado caché y colas y migrado tareas a ejecución asíncrona para hacer sistemas más rápidos y estables en producción.",
+    "experience": [
+      {
+        "company": "Lightfarm Studios",
+        "role": "Backend Developer",
+        "start": "Agosto 2024",
+        "end": "Presente",
+        "location": "Remoto",
+        "bullets": [
+          "Refactoricé servicios críticos para procesamiento en background con Redis Queue, reduciendo la carga del servicio síncrono y aumentando la disponibilidad.",
+          "Desarrollé un servicio para gestionar recálculos financieros en múltiples capas, permitiendo ejecución asíncrona, reprocesos y reintentos configurables.",
+          "Identifiqué y mitigé cuellos de botella de rendimiento usando Redis, PostgreSQL, profiling y métricas.",
+          "Contribuí a la evolución de los sistemas internos de chat y notificaciones, trabajando con WebSockets, persistencia en MongoDB y disparos asíncronos vía Redis."
+        ]
+      },
+      {
+        "company": "Puzzl Software House",
+        "role": "Backend Developer",
+        "start": "Septiembre 2021",
+        "end": "Julio 2024",
+        "location": "Remoto",
+        "bullets": [
+          "Refactoricé un proyecto legado introduciendo pruebas automatizadas y mejoras estructurales de arquitectura.",
+          "Automatizé jobs con cron e implementé integraciones con DigitalOcean/Amazon S3.",
+          "Implementé capa de caché con Redis reduciendo latencias en endpoints críticos.",
+          "Desarrollé reportes PostgreSQL integrados a Looker Studio para análisis de negocio.",
+          "Concebí e implementé sistema de invitación (referral) y sistema de carrera para cursos.",
+          "Implementé sistema de excepciones unificado, estandarizando errores entre backend y frontend.",
+          "Participé en guildas técnicas presentando mejoras de arquitectura, procesos y buenas prácticas.",
+          "Contribuí al mantenimiento y expansión del sistema de notificaciones via OneSignal, implementando nuevos flujos de envío según reglas de negocio."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Personal Page",
+        "year": "2024",
+        "description": "Página personal con panel admin, API propia y despliegue completo (React, TypeScript, Spring Boot, PostgreSQL)."
+      },
+      {
+        "title": "TFA - Time to Finish an Anime",
+        "year": "2023",
+        "description": "Aplicación contenedorizada que combina FastAPI + Redis + PostgreSQL para calcular estimaciones de tiempo, con arquitectura asíncrona y caching."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Faculdade Descomplica",
+        "degree": "Bacharelado em Engenharia de Software",
+        "start": "Enero 2026",
+        "end": "En curso",
+        "location": "Remoto"
+      },
+      {
+        "institution": "IFMA - Campus Caxias",
+        "degree": "Bacharelado em Ciencia de la Computación",
+        "start": "Julio 2021",
+        "end": "Mayo 2022",
+        "location": "Caxias - MA"
+      },
+      {
+        "institution": "IFMA - Campus Caxias",
+        "degree": "Curso técnico en informática integrado a la educación secundaria",
+        "start": "Enero 2018",
+        "end": "Mayo 2021",
+        "location": "Caxias - MA"
+      }
+    ],
+    "skills": {
+      "languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL", "Shell"],
+      "frameworks": ["FastAPI", "Django", "Flask", "Spring Boot"],
+      "databases": ["PostgreSQL", "SQLite", "MySQL", "Redis", "MongoDB"],
+      "infra": ["Docker", "Docker Compose", "Linux", "CI/CD", "GitHub Actions", "Grafana", "AWS (S3)"]
+    }
+  }
+}
