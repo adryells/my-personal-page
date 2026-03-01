@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import i18n from '../i18n';
 import Seo from '../components/Seo';
-import React from 'react';
 import styles from './Home.module.css';
 import SocialArea from '../components/SocialArea';
 import { useTheme } from '../services/themeContext';
